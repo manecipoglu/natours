@@ -10,14 +10,19 @@ Dark green: #28b485
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Lato", sans-serif;
   line-height: 1.7;
   color: #777;
-  padding: 2rem;
+  padding: 3.2rem;
+  box-sizing: border-box;
 }
 
 .header {
@@ -32,12 +37,12 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 2.5rem;
-  left: 2.5rem;
+  top: 4rem;
+  left: 4rem;
 }
 
 .logo {
-  height: 2.2rem;
+  height: 3.5rem;
 }
 
 .text-box {
@@ -46,19 +51,20 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  font-size: 1.6rem;
 }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 3.75rem;
+  margin-bottom: 6rem;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 3.75rem;
+  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 2.2rem;
+  letter-spacing: 3.5rem;
 
   animation-name: moveInLeft;
   animation-duration: 1s;
@@ -67,8 +73,8 @@ body {
 
 .heading-primary-sub {
   display: block;
-  font-size: 1.25rem;
-  letter-spacing: 1.1rem;
+  font-size: 2rem;
+  letter-spacing: 1.75rem;
 
   animation: moveInRight 1s ease-out;
 }
@@ -76,11 +82,11 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -92,11 +98,11 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {
@@ -108,7 +114,7 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3rem);
   }
 
   100% {
@@ -121,7 +127,7 @@ body {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1rem 2.5rem;
+  padding: 1.6rem 4rem;
   display: inline-block;
   border-radius: 50vw;
   transition: all 0.2s;
