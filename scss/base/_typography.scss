@@ -1,14 +1,14 @@
-@use "../abstracts/variables";
+@use "../abstracts/variables" as *;
 
 body {
   font-family: "Lato", sans-serif;
   line-height: 1.7;
-  color: variables.$color-gray-dark;
+  color: $color-gray-dark;
   padding: 3.2rem;
 }
 
 .heading-primary {
-  color: variables.$color-white;
+  color: $color-white;
   text-transform: uppercase;
   margin-bottom: 6rem;
 
@@ -36,8 +36,8 @@ body {
   text-transform: uppercase;
   background-image: linear-gradient(
     to right,
-    variables.$color-primary-dark,
-    variables.$color-primary-light
+    $color-primary-light,
+    $color-primary-dark
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -50,6 +50,20 @@ body {
 
   &:hover {
     transform: skew(15deg, 2deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(variables.$color-black, 0.2);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }
