@@ -8,6 +8,7 @@
       rgba($color-primary-dark, 0.8)
     ),
     url(../img/hero.jpg);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   background-size: cover;
   background-position: top;
