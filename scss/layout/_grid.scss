@@ -10,7 +10,8 @@
   }
 
   //Prevents height collapse caused by floats
-  @include clearfix;
+  // @include clearfix;
+  display: flow-root;
 
   //Select every class that starts with "col-"
   [class^="col-"] {
