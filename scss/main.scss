@@ -14,9 +14,10 @@
 @use "components/story";
 @use "components/bg-video";
 @use "components/form";
-@use "components/footer";
 
 @use "layout/header";
 @use "layout/grid";
+@use "layout/footer";
+@use "layout/navigation";
 
 @use "pages/home";
