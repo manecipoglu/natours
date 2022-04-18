@@ -1,10 +1,10 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 body {
   font-family: "Lato", sans-serif;
   line-height: 1.7;
   color: $color-gray-dark;
-  padding: 3.2rem;
 }
 
 .heading-primary {
@@ -21,14 +21,22 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &--sub {
     display: block;
     font-size: 2rem;
     letter-spacing: 1.75rem;
-
     animation: moveInRight 1s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -47,6 +55,13 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   transition: all 0.2s;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 
   &:hover {
     transform: skew(15deg, 2deg) scale(1.1);
